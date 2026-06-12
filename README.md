@@ -21,6 +21,7 @@ A [Rose Pine](https://rosepinetheme.com/) theme for [Rockbox](https://www.rockbo
 
 1. Copy the `.rockbox` directory to the root of your player (merge with the existing one).
 2. On the player, go to: **Settings -> Theme Settings -> Browse Themes** and pick `iris` or `iris-dawn`.
+3. Optional, for the thin row separators as in the screenshots: set **Settings -> Theme Settings -> List Separator** to 1 px (Rockbox does not let themes change this setting).
 
 Made for 320×240 devices (EROS Q / EROS K native, iPod Video / 6G / Color, and others).
 
