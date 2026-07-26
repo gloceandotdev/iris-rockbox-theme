@@ -1,0 +1,45 @@
+# Iris Dawn - Rose Pine Dawn (light) - while-playing screen
+#
+# Fonts
+%Fl(3,12-Inter-Regular.fnt)
+%Fl(4,16-Inter-Bold.fnt)
+#
+# keep the base skin (sidebar + topbar) visible
+%we
+#
+# lock screen logic
+%?mh<|%Vd(npa)%Vd(npt)%Vd(npr)%Vd(npl)%Vd(npp)%Vd(npe)>
+#
+# ---------------- Now playing ----------------
+# album art, 84x84
+%Vl(npa,131,51,86,86,-)
+%Vb(f0f0e8)
+%dr(0,0,86,86,c8c8c8)
+%dr(1,1,84,84,f0e8e0)
+%Cl(1,1,84,84,c,c)
+%Cd
+#
+%Vl(npt,28,146,292,18,4)
+%Vf(585078)
+%Vb(f0f0e8)
+%s%ac%?it<%it|%fn>
+#
+%Vl(npr,28,166,292,14,3)
+%Vf(9078a0)
+%Vb(f0f0e8)
+%s%ac%ia
+#
+%Vl(npl,28,183,292,14,3)
+%Vf(9890a0)
+%Vb(f0f0e8)
+%s%ac%id
+#
+%Vl(npp,40,216,268,3,-)
+%Vf(9078a0)
+%Vb(d8d8d0)
+%pb(0,0,268,3,noborder)
+#
+%Vl(npe,40,224,268,13,3)
+%Vf(9890a0)
+%Vb(f0f0e8)
+%al%pc%ar%pt

@@ -1,0 +1,45 @@
+# Iris Night - neutral dark - while-playing screen
+#
+# Fonts
+%Fl(3,12-Inter-Regular.fnt)
+%Fl(4,16-Inter-Bold.fnt)
+#
+# keep the base skin (sidebar + topbar) visible
+%we
+#
+# lock screen logic
+%?mh<|%Vd(npa)%Vd(npt)%Vd(npr)%Vd(npl)%Vd(npp)%Vd(npe)>
+#
+# ---------------- Now playing ----------------
+# album art, 84x84
+%Vl(npa,131,51,86,86,-)
+%Vb(181418)
+%dr(0,0,86,86,505058)
+%dr(1,1,84,84,202028)
+%Cl(1,1,84,84,c,c)
+%Cd
+#
+%Vl(npt,28,146,292,18,4)
+%Vf(d8dce0)
+%Vb(181418)
+%s%ac%?it<%it|%fn>
+#
+%Vl(npr,28,166,292,14,3)
+%Vf(b8acc8)
+%Vb(181418)
+%s%ac%ia
+#
+%Vl(npl,28,183,292,14,3)
+%Vf(706c78)
+%Vb(181418)
+%s%ac%id
+#
+%Vl(npp,40,216,268,3,-)
+%Vf(b8acc8)
+%Vb(404048)
+%pb(0,0,268,3,noborder)
+#
+%Vl(npe,40,224,268,13,3)
+%Vf(706c78)
+%Vb(181418)
+%al%pc%ar%pt

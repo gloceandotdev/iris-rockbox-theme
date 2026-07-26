@@ -1,12 +1,20 @@
 # Iris
 
-A [Rose Pine](https://rosepinetheme.com/) theme for [Rockbox](https://www.rockbox.org/), made for 320×240 color players. Comes in two variants: **Iris** (Rose Pine, dark) and **Iris Dawn** (Rose Pine Dawn, light).
+A [Rose Pine](https://rosepinetheme.com/) theme for [Rockbox](https://www.rockbox.org/), made for 320×240 color players.
+
+Comes in four variants. Two in Rose Pine's own palette, and two neutral counterparts that keep the exact same layout with the hue dialled back:
 
 | | Iris | Iris Dawn |
 |---|---|---|
-| Menu | ![](screenshots/menu-dark.png) | ![](screenshots/menu-light.png) |
-| Now playing | ![](screenshots/wps-dark.png) | ![](screenshots/wps-light.png) |
-| Lock screen | ![](screenshots/lock-dark.png) | ![](screenshots/lock-light.png) |
+| Menu | ![](screenshots/iris-menu.png) | ![](screenshots/iris-dawn-menu.png) |
+| Now playing | ![](screenshots/iris-wps.png) | ![](screenshots/iris-dawn-wps.png) |
+| Lock screen | ![](screenshots/iris-lock.png) | ![](screenshots/iris-dawn-lock.png) |
+
+| | Iris Night | Iris Morning |
+|---|---|---|
+| Menu | ![](screenshots/iris-night-menu.png) | ![](screenshots/iris-morning-menu.png) |
+| Now playing | ![](screenshots/iris-night-wps.png) | ![](screenshots/iris-morning-wps.png) |
+| Lock screen | ![](screenshots/iris-night-lock.png) | ![](screenshots/iris-morning-lock.png) |
 
 ## Features
 
@@ -15,13 +23,22 @@ A [Rose Pine](https://rosepinetheme.com/) theme for [Rockbox](https://www.rockbo
 - Topbar with per-screen titles and the currently playing track info
 - Now playing screen with album art, track metadata and seek bar
 - [Inter](https://rsms.me/inter/) typeface throughout, converted to Rockbox bitmap fonts
-- Drawn entirely with skin-engine primitives, no bitmap assets used except one transparent iconset
+
+Everything is drawn with skin-engine primitives except two things: a transparent iconset used to indent list rows, and the sidebar clock, which is a set of pre-rendered bitmap strips because the skin engine can only draw text horizontally.
 
 ## Installation
 
-1. Copy the `.rockbox` directory to the root of your player (merge with the existing one).
-2. On the player, go to: **Settings -> Theme Settings -> Browse Themes** and pick `iris` or `iris-dawn`.
-3. Optional, for the thin row separators as in the screenshots: set **Settings -> Theme Settings -> List Separator** to 1 px and **List Separator Color** to a subtle tone (Rockbox does not let themes change these).
+Each variant is a self-contained tree, so you only need the one you want:
+
+```
+iris/.rockbox          iris-night/.rockbox
+iris-dawn/.rockbox     iris-morning/.rockbox
+```
+
+1. Copy the `.rockbox` folder from your chosen variant to the root of your player, merging with the existing one.
+2. On the player, go to: **Settings → Theme Settings → Browse Themes** and pick `iris`, `iris-dawn`, `iris-night` or `iris-morning`.
+
+Installing several is fine — they ship identical fonts and iconset, so merging them adds no extra space on the player beyond each theme's own skin files.
 
 Made for 320×240 devices (EROS Q / EROS K native, iPod Video / 6G / Color, and others).
 
