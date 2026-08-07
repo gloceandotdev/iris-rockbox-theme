@@ -15,7 +15,7 @@
 %?mh<%VI(h)|%VI(m)>
 %?mh<%Vd(lkbg)%Vd(lkc)%Vd(lkd)%?if(%mp, >, 1)<%Vd(lkb)%Vd(lkt)%Vd(lka)%Vd(lke)%Vd(lkp)%Vd(lkr)>|%?if(%cs, =, 2)<%Vd(tbnp)|%?if(%mp, >, 1)<%Vd(tbsa)%Vd(tbst)>>>
 #
-# playback state dot: playing circle, paused hollow square, stopped solid square
+# playback state dot: playing circle, paused solid square, stopped hollow square
 %?if(%mp, =, 3)<%Vd(psu)|%?if(%mp, >, 1)<%Vd(psp)|%Vd(pss)>>
 #
 # ---------------- Sidebar ----------------
@@ -30,16 +30,16 @@
 %dr(1,0,4,6,c0a4e0)
 %dr(0,1,6,4,c0a4e0)
 #
-# playback dot, paused - hollow square
+# playback dot, paused - solid square
 %Vl(psu,11,8,6,6,-)
 %Vb(282438)
 %dr(0,0,6,6,c0a4e0)
-%dr(1,1,4,4,282438)
 #
-# playback dot, stopped - solid square
+# playback dot, stopped - hollow square
 %Vl(pss,11,8,6,6,-)
 %Vb(282438)
 %dr(0,0,6,6,c0a4e0)
+%dr(1,1,4,4,282438)
 #
 # volume bar
 %V(11,110,6,56,-)

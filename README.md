@@ -20,7 +20,7 @@ Comes in four variants. Two in Rose Pine's own palette, and two neutral counterp
 
 - Lock screen with a big clock and track info
 - Sidebar with playback state, volume level, clock, and battery, visible on every screen
-- Playback state doubles as the sidebar's accent dot: circle when playing, hollow square when paused, solid square when stopped
+- Playback state doubles as the sidebar's accent dot: circle when playing, solid square when paused, hollow square when stopped
 - Topbar with per-screen titles and the currently playing track info
 - Now playing screen with album art, track metadata and seek bar
 - [Inter](https://rsms.me/inter/) typeface throughout, converted to Rockbox bitmap fonts
