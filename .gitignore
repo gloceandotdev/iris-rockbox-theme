@@ -1,2 +1,5 @@
 .DS_Store
 *.zip
+# Apple-proprietary example fonts kept locally, not redistributed
+/*-SFPro-*.fnt
+/*-SF-Pro-*.fnt

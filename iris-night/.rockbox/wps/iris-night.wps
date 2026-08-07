@@ -1,8 +1,8 @@
 # Iris Night - neutral dark - while-playing screen
 #
 # Fonts
-%Fl(3,12-Inter-Regular.fnt)
-%Fl(4,16-Inter-Bold.fnt)
+%Fl(3,12-InTofu-Regular.fnt)
+%Fl(4,16-InTofu-Bold.fnt)
 #
 # keep the base skin (sidebar + topbar) visible
 %we

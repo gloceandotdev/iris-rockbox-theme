@@ -22,9 +22,11 @@ Comes in four variants. Two in Rose Pine's own palette, and two neutral counterp
 - Sidebar with volume level, clock, and battery, visible on every screen
 - Topbar with per-screen titles and the currently playing track info
 - Now playing screen with album art, track metadata and seek bar
-- [Inter](https://rsms.me/inter/) typeface throughout, converted to Rockbox bitmap fonts
+- [InTofu](fonts/README.md) typeface throughout: [Inter](https://rsms.me/inter/) for Latin, [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) for CJK and everything else, merged into one set of Rockbox bitmap fonts
 
 Everything is drawn with skin-engine primitives except two things: a transparent iconset used to indent list rows, and the sidebar clock, which is a set of pre-rendered bitmap strips because the skin engine can only draw text horizontally.
+
+The fonts cover the full Basic Multilingual Plane, so CJK, kana, Hangul-adjacent scripts and more render without tofu. See [fonts/README.md](fonts/README.md) for the font build.
 
 ## Installation
 
@@ -44,4 +46,4 @@ Made for 320×240 devices (EROS Q / EROS K native, iPod Video / 6G / Color, and 
 
 ## License
 
-Theme is MIT licensed. The bundled fonts are derived from [Inter](https://github.com/rsms/inter) and remain under the SIL Open Font License (see `.rockbox/fonts/Inter-License.txt`). Color palette by [Rose Pine](https://rosepinetheme.com/).
+Theme is MIT licensed. The bundled fonts are derived from [Inter](https://github.com/rsms/inter) and [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC), merged into a single typeface ("InTofu") where Inter covers Latin and Noto covers everything else; both remain under the SIL Open Font License (see `.rockbox/fonts/Inter-License.txt` and `.rockbox/fonts/Noto-License.txt`, and [fonts/README.md](fonts/README.md) for how they're built). Color palette by [Rose Pine](https://rosepinetheme.com/).

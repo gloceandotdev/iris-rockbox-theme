@@ -1,10 +1,10 @@
 # Iris Dawn - Rose Pine Dawn (light) - base skin
 #
 # Fonts
-%Fl(2,11-Inter-SemiBold.fnt)
-%Fl(3,12-Inter-Regular.fnt)
-%Fl(4,16-Inter-Bold.fnt)
-%Fl(5,60-Inter-SemiBold.fnt)
+%Fl(2,11-InTofu-SemiBold.fnt)
+%Fl(3,12-InTofu-Regular.fnt)
+%Fl(4,16-InTofu-Bold.fnt)
+%Fl(5,60-InTofu-SemiBold.fnt)
 #
 # rotated clock strips
 %xl(cm,clock-m.bmp,10,0,60)
