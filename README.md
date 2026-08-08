@@ -16,6 +16,12 @@ Comes in four variants. Two in Rose Pine's own palette, and two neutral counterp
 | Now playing | ![](screenshots/iris-night-wps.png) | ![](screenshots/iris-morning-wps.png) |
 | Lock screen | ![](screenshots/iris-night-lock.png) | ![](screenshots/iris-morning-lock.png) |
 
+The accent dot at the top of the sidebar doubles as a playback indicator, so play state is visible on every screen:
+
+| Playing | Paused | Stopped |
+|---|---|---|
+| ![](screenshots/iris-dot-playing.png) | ![](screenshots/iris-dot-paused.png) | ![](screenshots/iris-dot-stopped.png) |
+
 ## Features
 
 - Lock screen with a big clock and track info
