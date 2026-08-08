@@ -118,9 +118,10 @@
 # bottom strip: track info and seek bar
 %Vl(lkb,28,190,292,50,-)
 %Vb(f8f8f0)
+%dr(0,0,292,50,f8f8f0)
 %dr(0,0,292,1,d8d8d0)
 #
-%Vl(lkt,40,196,268,18,4)
+%Vl(lkt,40,196,268,17,4)
 %Vf(585078)
 %Vb(f8f8f0)
 %s%al%?it<%it|%fn>
