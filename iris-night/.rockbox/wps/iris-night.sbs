@@ -18,6 +18,9 @@
 # playback state dot: playing circle, paused solid square, stopped hollow square
 %?if(%mp, =, 3)<%Vd(psu)|%?if(%mp, >, 1)<%Vd(psp)|%Vd(pss)>>
 #
+# charging dot, shown while the charger is connected
+%?bp<%Vd(bch)>
+#
 # ---------------- Sidebar ----------------
 %V(0,0,28,240,-)
 %Vf(b8acc8)
@@ -54,13 +57,19 @@
 %?cf<%xd(ch,%cH,1)|%xd(cj,%cl)>
 #
 # battery pill, rotated 90 deg CCW
-%V(0,215,28,18,-)
+%V(0,210,28,18,-)
 %Vf(908c98)
 %Vb(282430)
 %dr(12,0,4,2,908c98)
 %dr(10,2,8,16,908c98)
 %dr(11,3,6,14,282430)
 %bl(12,4,4,12,noborder)
+#
+# charging dot, below the battery pill
+%Vl(bch,12,230,4,4,-)
+%Vb(282430)
+%dr(1,0,2,4,b8acc8)
+%dr(0,1,4,2,b8acc8)
 #
 # ---------------- Topbar ----------------
 %V(28,0,292,18,-)
