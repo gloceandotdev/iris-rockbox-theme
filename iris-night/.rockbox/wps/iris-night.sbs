@@ -12,7 +12,7 @@
 %xl(cj,clock-h12.bmp,10,12,12)
 #
 # lock screen logic
-%?mh<%VI(h)|%VI(m)>
+%?mh<%VI(h)|%?if(%cs, =, 21)<%VI(u)|%VI(m)>>
 %?mh<%Vd(lkbg)%Vd(lkc)%Vd(lkd)%?if(%mp, >, 1)<%Vd(lkb)%Vd(lkt)%Vd(lka)%Vd(lke)%Vd(lkp)%Vd(lkr)>|%?if(%cs, =, 2)<%Vd(tbnp)|%?if(%mp, >, 1)<%Vd(tbsa)%Vd(tbst)>>>
 #
 # playback state dot: playing circle, paused solid square, stopped hollow square
@@ -20,6 +20,9 @@
 #
 # charging dot, shown while the charger is connected
 %?bp<%Vd(bch)>
+#
+# usb screen: collapse the UI viewport so the stock logo is clipped away
+%?mh<|%?if(%cs, =, 21)<%Vd(ubg)%Vd(udo)%Vd(utx)>>
 #
 # ---------------- Sidebar ----------------
 %V(0,0,28,240,-)
@@ -109,6 +112,11 @@
 %Vf(181418)
 %Vb(181418)
 #
+# collapsed 1x1 stub used on the usb screen, clips the stock usb logo
+%Vi(u,28,18,1,1,-)
+%Vf(181418)
+%Vb(181418)
+#
 # ---------------- Lock screen ----------------
 %Vl(lkbg,28,18,292,222,-)
 %Vb(181418)
@@ -154,3 +162,20 @@
 %Vf(706c78)
 %Vb(202028)
 %ar%pt
+#
+# ---------------- USB screen ----------------
+%Vl(ubg,28,18,292,222,-)
+%Vb(181418)
+%dr(0,0,292,222,181418)
+#
+# accent dot, echoing the sidebar motif
+%Vl(udo,170,110,8,8,-)
+%Vb(181418)
+%dr(2,0,4,8,b8acc8)
+%dr(0,2,8,4,b8acc8)
+%dr(1,1,6,6,b8acc8)
+#
+%Vl(utx,28,128,292,18,4)
+%Vf(b8acc8)
+%Vb(181418)
+%acC O N N E C T E D
